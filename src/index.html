@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h4>大病救助</h4>
+        <p>目标金额 170000.00<span>元</span></p>
+        <p>资金用途 白血病治疗</p>
+        <p>截止日期 2016-08-10 10:10 共<i>10</i> 天</p>
+
+        <div class="xian">
+            <i>3天</i>
+            <div class="hong">
+                <span></span>
+            </div>
+            <b>30天</b>
+        </div>
+        <div class="hui"></div>
+        <h3>请救救我患白血病的女儿，她还想参加中考</h3>
+        <p class="duan">
+            建议详细描述受助人的基本情况：如家庭背景、经济状况、患病经历等。 建议详细描述受助人的基本情况：如家庭背景、经济状况、患病经历等。 建议详细描述受助人的基本情况：如家庭背景、经济状况、患病经历等。 建议详细描述受助人的基本情况：如家庭背景、经济状况、患病经历等。 建议详细描述受助人的基本情况：如家庭背景、经济状况、患病经历等。
+        </p>
+        <strong>
+                项目内容和项目图片禁止透露任何联系方式和银行卡等收款信息，包括但不限于手机号码，微信号码，座机号码，支付宝账号，银行卡密码等。违反以上规定，项目验证和提现申请均不予通过。
+        </strong>
+        <div class="img">
+            <div class="content">
+                <div class="add">
+                    <div><img src="imgs/1.jpg" alt=""></div>
+                    <input type="file">
+                </div>
+            </div>
+            <img src="imgs/1.png" alt="">
+            <img src="imgs/2.png" alt="">
+        </div>
+        <u>发布大病救助项目，最好上传患者治疗中的图片，患者患前后生活对比，医院诊断证明，以助于提高项目可信度。</u>
+        <button class="btn">发布项目</button>
+    </div>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $('.btn').on('click', function() {
+            location.href = "detail.html";
+        })
+        new UpImg({
+            add: ".add",
+            type: ["jpg", "jpeg", "bmp", "png", "gif", "svg"],
+            size: 3,
+            count: 9
+        });
+    </script>
+</body>
+
+</html>
